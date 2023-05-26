@@ -5,12 +5,10 @@ import { DefaultLayout } from './components/Layout';
 import { Fragment } from 'react';
 
 function App() {
-    console.log(publicRoutes);
     return (
         <BrowserRouter>
             <Routes>
                 {publicRoutes.map((route, index) => {
-                    console.log(route);
                     const Page = route.component;
                     let Layout = DefaultLayout;
 
